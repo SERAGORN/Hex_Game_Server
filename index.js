@@ -39,6 +39,7 @@ var current_room
                         x: "",
                         y: ""
                     })
+                    console.log(rooms[i].users)
                 }
             }
         })
