@@ -22,6 +22,7 @@ var current_room
                 users: []
             })
             socket.emit(msg.room, 'kek')
+            console.log(msg.room)
             console.log(rooms)
         })
 
@@ -32,6 +33,7 @@ var current_room
             current_room = msg.room
             for (let i = 0; i < rooms.length; i++) {
                 if (current_room == rooms[i].room) {
+                    console.log("asdasd")
                     rooms[i].users.push({
                         name: msg.name,
                         x: "",
