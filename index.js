@@ -31,7 +31,7 @@ var current_room
             console.log("======")
             console.log(rooms)
             current_room = msg.room
-            for (let i = 0; i < rooms.length; i++) {
+            for (var i = 0; i < rooms.length; i++) {
                 if (current_room == rooms[i].room) {
                     console.log("asdasd")
                     rooms[i].users.push({
@@ -81,7 +81,7 @@ var current_room
         })
         socket.on('send_move', function (msg) {
             // if (start) {
-            //     for (let i = 0; i < users.length; i++) {
+            //     for (var i = 0; i < users.length; i++) {
 
             //     }
             // }
